@@ -28,6 +28,6 @@
 			<li><a href="update-contactinfo.php"><i class="fa fa-files-o"></i> Update Contact Info</a></li>
 			<li><a href="manage-subscribers.php"><i class="fa fa-table"></i> Manage Subscribers</a></li>
 
-			<li><a href="logout.php"><i class="fa fa-thin fa-right-from-bracket"></i>Logout</a></li>
+			<li><a href="logout.php" onclick="return confirm('Do you want to logout !');"><i class="fa fa-thin fa-right-from-bracket "></i>Logout</a></li>
 		</ul>
 	</nav>

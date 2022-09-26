@@ -2,10 +2,7 @@
   <div class="default-header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img src="assets/images/download.png" alt="image" /></a> </div>
-        </div>
-        <div class="col-sm-9 col-md-10">
+        <div class="col-sm-9 col-md-12">
           <div class="header_info">
             <?php
             if (strlen($_SESSION['login']) == 0) 
@@ -31,7 +28,7 @@
       <div class="header_wrap">
         <div class="user_login">
           <ul>
-            <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>
+            <li class="dropdown"> <a a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>
                 <?php
                 $email = $_SESSION['login'];
                 $sql = "SELECT FullName FROM tblusers WHERE EmailId=:email ";
@@ -68,7 +65,7 @@
         <div class="header_search">
           <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
           <form action="#" method="get" id="header-search-form">
-            <input type="text" placeholder="Search..." class="form-control">
+            <input type="text" placeholder="Search" class="clear form-control">
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>
@@ -80,7 +77,6 @@
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Contact Us</a></li>
-
         </ul>
       </div>
     </div>

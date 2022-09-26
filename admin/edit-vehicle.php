@@ -60,7 +60,8 @@ else{
 	}?>
 
 <!doctype html>
-<html lang="en" class="no-js">
+<!-- <html lang="en" class="no-js"> -->
+<html lang="lo-LA">
 
 <head>
 	<meta charset="UTF-8">
@@ -150,7 +151,6 @@ else{
 																<option value="<?php echo htmlentities($result->bid);?>"><?php echo htmlentities($bdname=$result->BrandName); ?> </option>
 																<?php $ret="select id,BrandName from tblbrands";
 																$query= $dbh -> prepare($ret);
-																//$query->bindParam(':id',$id, PDO::PARAM_STR);
 																$query-> execute();
 																$resultss = $query -> fetchAll(PDO::FETCH_OBJ);
 																if($query -> rowCount() > 0)
@@ -161,16 +161,16 @@ else{
 																		{
 																			continue;
 																		} 
-																		else{?>
-																				<option value="<?php echo htmlentities($results->id);?>"><?php echo htmlentities($results->BrandName);?></option>
+																		else
+																		{?>
+																			<option value="<?php echo htmlentities($results->id);?>"><?php echo htmlentities($results->BrandName);?></option>
 																			<?php
 																		}
 																	}
 																} ?>
 
 															</select>
-														</div>
-													</div>
+														</div><br> 
 											
 													<div class="hr-dashed"></div>
 													<div class="form-group">
@@ -188,7 +188,8 @@ else{
 														<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
 														<div class="col-sm-4">
 															<select class="selectpicker" name="fueltype" required>
-																<option value="<?php echo htmlentities($results->FuelType);?>"> <?php echo htmlentities($result->FuelType);?> </option>
+																<option value="">  </option>
+
 																<option value="Petrol">Petrol</option>
 																<option value="Diesel">Diesel</option>
 																<option value="CNG">CNG</option>

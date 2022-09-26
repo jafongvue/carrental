@@ -10,7 +10,8 @@ else
 {
 	?>
 <!doctype html>
-<html lang="en" class="no-js">
+<!-- <html lang="en" class="no-js"> -->
+<html lang="lo-LA">
 
 <head>
 	<meta charset="UTF-8">
@@ -24,6 +25,7 @@ else
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" hrel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<!-- Sandstone Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Bootstrap Datatables -->

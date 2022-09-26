@@ -16,7 +16,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 	} ?>
 
 	<!doctype html>
-	<html lang="en" class="no-js">
+	<!-- <html lang="en" class="no-js"> -->
+	<html lang="lo-LA">
 
 	<head>
 		<meta charset="UTF-8">
@@ -113,7 +114,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 											$results = $query->fetchAll(PDO::FETCH_OBJ);
 											$cnt = 1;
 											if ($query->rowCount() > 0) {
-												foreach ($results as $result) {				?>
+												foreach ($results as $result) {?>
 													<tr>
 														<td><?php echo htmlentities($cnt); ?></td>
 														<td><?php echo htmlentities($result->VehiclesTitle); ?></td>

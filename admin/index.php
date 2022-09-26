@@ -25,7 +25,8 @@ if(isset($_POST['login']))
 
 ?>
 <!doctype html>
-<html lang="en" class="no-js">
+<!-- <html lang="en" class="no-js"> -->
+<html lang="lo-LA">
 
 <head>
 	<meta charset="UTF-8">
